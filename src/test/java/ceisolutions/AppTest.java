@@ -25,6 +25,9 @@ public class AppTest
 
     @After
     public void tearDown() {
+        if (this.driver == null) {
+            return;
+        }
         this.driver.close();
     }
 
